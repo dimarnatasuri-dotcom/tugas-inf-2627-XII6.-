@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Menggunakan Font Google Poppins agar tampilan lebih rapi -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container Utama CV */
+.cv-container {
+    display: flex;
+    width: 100%;
+    max-width: 850px;
+    background: #ffffff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Kolom Kiri (Profil/Biodata) */
+.left-column {
+    width: 35%;
+    background-color: #1e293b;
+    color: #ffffff;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-frame {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 4px solid #38bdf8;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.profile-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.name {
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+}
+
+.tagline {
+    font-size: 0.85rem;
+    color: #38bdf8;
+    margin-bottom: 25px;
+}
+
+.section-left {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.section-left h3 {
+    font-size: 1rem;
+    border-bottom: 2px solid #38bdf8;
+    padding-bottom: 5px;
+    margin-bottom: 12px;
+    color: #f8fafc;
+}
+
+.section-left ul {
+    list-style: none;
+}
+
+.section-left li {
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+    color: #cbd5e1;
+    line-height: 1.4;
+}
+
+.section-left li strong {
+    color: #ffffff;
+}
+
+.hobby-list li {
+    position: relative;
+    padding-left: 15px;
+}
+
+.hobby-list li::before {
+    content: "•";
+    color: #38bdf8;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* Kolom Kanan (Pengalaman & Keahlian) */
+.right-column {
+    width: 65%;
+    padding: 35px 30px;
+    background-color: #ffffff;
+}
+
+.section-right {
+    margin-bottom: 30px;
+}
+
+.section-right h2 {
+    font-size: 1.2rem;
+    color: #1e293b;
+    border-left: 4px solid #38bdf8;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Badges Keahlian */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skill-badge {
+    background-color: #e0f2fe;
+    color: #0369a1;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 20px;
+}
+
+/* Timeline Pengalaman */
+.timeline-item {
+    margin-bottom: 15px;
+    border-left: 2px solid #e2e8f0;
+    padding-left: 15px;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: #38bdf8;
+    border-radius: 50%;
+    position: absolute;
+    left: -5px;
+    top: 5px;
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.item-header .title {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #0f172a;
+}
+
+.item-header .date {
+    font-size: 0.75rem;
+    color: #64748b;
+}
+
+.description {
+    font-size: 0.82rem;
+    color: #475569;
+    line-height: 1.5;
+}
+
+/* Responsif untuk Layar HP/Kecil */
+@media (max-width: 600px) {
+    .cv-container {
+        flex-direction: column;
+    }
+    .left-column, .right-column {
+        width: 100%;
+    }
+}
+    </style>
+</head>
+<body>
+
+    <div class="cv-container">
+        <!-- SISIKIRI: Foto Profil & Informasi Pribadi -->
+        <aside class="left-column">
+            <div class="profile-frame">
+                <!-- Ganti URL gambar di bawah ini dengan foto formal Anda -->
+                <img src="https://cdn.phototourl.com/member/2026-10-18-1a609e90-134e-4bd5-9513-5c6b75e85beb.jpg" alt="Foto Profil" id="profile-img">
+            </div>
+            
+            <h1 class="name">Muhammad Dimar Natasuri</h1>
+            <p class="tagline">Siswa / Pelajar</p>
+
+            <div class="section-left">
+                <h3>Biodata Diri</h3>
+                <ul>
+                    <li><strong>Tanggal Lahir:</strong><br>Bandung, 12 Juni 2008</li>
+                    <li><strong>Umur:</strong><br>17 Tahun</li>
+                    <li><strong>Alamat:</strong><br>Jl.Manggahang 1, Rt.04, Rw.08, Bandung</li>
+                </ul>
+            </div>
+
+            <div class="section-left">
+                <h3>Hobi</h3>
+                <ul class="hobby-list">
+                    <li>Membaca Buku</li>
+                    <li>Olahraga</li>
+                    <li>coding/pemograman</li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- SISI KANAN: Detail Keahlian & Pengalaman -->
+        <main class="right-column">
+            <!-- Keahlian -->
+            <section class="section-right">
+                <h2>Keahlian</h2>
+                <div class="skills-grid">
+                    <span class="skill-badge">HTML & CSS</span>
+                    <span class="skill-badge">Ledership</span>
+                    <span class="skill-badge">Microsoft Office</span>
+                    <span class="skill-badge">Public Speaking</span>
+                    <span class="skill-badge">Kerja Sama Tim</span>
+                </div>
+            </section>
+
+            <!-- Pengalaman Berorganisasi & Ekstrakurikuler -->
+            <section class="section-right">
+                <h2>Pengalaman Organisasi & Ekstrakurikuler</h2>
+                
+                <div class="timeline-item">
+                    <div class="item-header">
+                        <span class="title">Ketua OSIS</span>
+                        <span class="date">2021 - 2024</span>
+                    </div>
+                    <p class="description">pembentuk karakter, mulai dari melatih jiwa kepemimpinan, mental yang tangguh, hingga kemampuan berbicara di depan umum (public speaking).</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="item-header">
+                        <span class="title">Anggota Ekstrakurikuler Paskibra</span>
+                        <span class="date">2021 - 2024</span>
+                    </div>
+                    <p class="description">pembentukan disiplin tinggi, ketahanan fisik, dan mental yang tangguh melalui latihan baris-berbaris yang intensif.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="item-header">
+                        <span class="title">Wakil Ekstrakulikuler KIR (kelompok Ilmiah Remaja)</span>
+                        <span class="date">2025 - 2026</span>
+                    </div>
+                    <p class="description">memberikan pengalaman berharga dalam mengasah kemampuan berpikir kritis, analitis, dan sistematis.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+  </html>
